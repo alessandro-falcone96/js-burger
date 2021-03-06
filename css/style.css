@@ -19,6 +19,7 @@ header{
 }
 header h1{
   align-self: center;
+  margin-left: 30px;
 }
 header img{
   /* position: relative;
@@ -31,6 +32,51 @@ main{
   width: 50%;
   height: 80vh;
 }
+main .contenitore{
+  margin-left: 30px;
+}
+main .contenitore h2{
+  padding-top: 45px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+main .contenitore .contenitore-ingredienti{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+main .contenitore .contenitore-ingredienti .ingrediente{
+  width: 50%;
+}
+main .contenitore .contenitore-ingredienti .ingrediente ul li{
+  list-style: none;
+}
+
+/* PROVA STYLING */
+
+/* FINE PROVA STYLING */
+
+main .contenitore .contenitore-ingredienti .ingrediente ul li img{
+  height: 50px;
+}
+main .contenitore .contenitore-ingredienti .ingrediente ul li input{
+  color: #D33359;
+}
+main .contenitore .discount {
+  display: flex;
+  justify-content: flex-start;
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+}
+main .contenitore .discount h4{
+  /* width: 30%; */
+}
+main .contenitore .discount input{
+  width: 70%;
+  margin-left: 10px;
+}
+
+
 
 footer{
   background-color: #D33359;

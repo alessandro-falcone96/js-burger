@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Create Your Burger</title>
   </head>
@@ -14,11 +16,71 @@
 
     <main>
 
+      <div class="contenitore">
+        <h2>Mio Nome</h2>
+        <h3>Ingredients</h3>
+        <div class="contenitore-ingredienti">
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/cheese.svg" alt=""></li>
+              <li><h4>Cheese</h4></li>
+              <li><input type="checkbox" id="cheese" name="cheese" value=""></li>
+              <li><label for="cheese">add</label></li>
+            </ul>
+          </div>
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/tomato.svg" alt=""></li>
+              <li><h4>Tomato</h4></li>
+              <li><input type="checkbox" id="tomato" name="tomato" value=""></li>
+              <li><label for="tomato">add</label></li>
+            </ul>
+          </div>
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/fried-egg.svg" alt=""></li>
+              <li><h4>Egg</h4></li>
+              <li><input type="checkbox" id="egg" name="egg" value=""></li>
+              <li><label for="egg">add</label></li>
+            </ul>
+          </div>
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/lettuce.svg" alt=""></li>
+              <li><h4>Lettuce</h4></li>
+              <li><input type="checkbox" id="lettuce" name="lettuce" value=""></li>
+              <li><label for="lettuce">add</label></li>
+            </ul>
+          </div>
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/mustard.svg" alt=""></li>
+              <li><h4>Mustard</h4></li>
+              <li><input type="checkbox" id="mustard" name="mustard" value=""></li>
+              <li><label for="mustard">add</label></li>
+            </ul>
+          </div>
+          <div class="ingrediente">
+            <ul class="list-inline">
+              <li><img src="img/ketchup.svg" alt=""></li>
+              <li><h4>Ketchup</h4></li>
+              <li><input type="checkbox" id="ketchup" name="ketchup" value=""></li>
+              <li><label for="ketchup">add</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="discount">
+          <h4>Discount Coupon</h4>
+          <input type="text" name="discount-coupon" value="" placeholder="Insert Coupon">
+        </div>
+        <a href="#"><button class="btn" type="button" name="button">Calculate</button></a>
+      </div>
+
     </main>
 
     <footer>
       <h3>Your Price</h3>
-      <h2>$<span id="price">58</span></h2>
+      <h2>$ <span id="price">50</span></h2>
     </footer>
 
     <script src="js/script.js" charset="utf-8"></script>
