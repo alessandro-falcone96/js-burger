@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Create Your Burger</title>
   </head>
@@ -17,63 +20,95 @@
     <main>
 
       <div class="contenitore">
-        <h2>Mio Nome</h2>
+        <div class="name">
+          <h2>Name</h2>
+
+          <input id="namePerson" class="input" type="text" name="namePerson" value="" placeholder="Insert Your Name">
+        </div>
+
+
         <h3>Ingredients</h3>
         <div class="contenitore-ingredienti">
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/cheese.svg" alt=""></li>
               <li><h4>Cheese</h4></li>
-              <li><input type="checkbox" id="cheese" name="cheese" value=""></li>
-              <li><label for="cheese">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="cheese" class="ingredienteHamburger" type="checkbox" name="cheese" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/tomato.svg" alt=""></li>
               <li><h4>Tomato</h4></li>
-              <li><input type="checkbox" id="tomato" name="tomato" value=""></li>
-              <li><label for="tomato">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="tomato" class="ingredienteHamburger" type="checkbox" name="tomato" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/fried-egg.svg" alt=""></li>
               <li><h4>Egg</h4></li>
-              <li><input type="checkbox" id="egg" name="egg" value=""></li>
-              <li><label for="egg">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="egg" class="ingredienteHamburger" type="checkbox" name="egg" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/lettuce.svg" alt=""></li>
               <li><h4>Lettuce</h4></li>
-              <li><input type="checkbox" id="lettuce" name="lettuce" value=""></li>
-              <li><label for="lettuce">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="lettuce" class="ingredienteHamburger" type="checkbox" name="lettuce" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/mustard.svg" alt=""></li>
               <li><h4>Mustard</h4></li>
-              <li><input type="checkbox" id="mustard" name="mustard" value=""></li>
-              <li><label for="mustard">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="mustard" class="ingredienteHamburger" type="checkbox" name="mustard" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
           <div class="ingrediente">
             <ul class="list-inline">
               <li><img src="img/ketchup.svg" alt=""></li>
               <li><h4>Ketchup</h4></li>
-              <li><input type="checkbox" id="ketchup" name="ketchup" value=""></li>
-              <li><label for="ketchup">add</label></li>
+              <li>
+                <label class="contenitore-check">add
+                  <input id="ketchup" class="ingredienteHamburger" type="checkbox" name="ketchup" value="">
+                  <span class="checkmark"></span>
+                </label>
+              </li>
             </ul>
           </div>
         </div>
         <div class="discount">
           <h4>Discount Coupon</h4>
-          <input type="text" name="discount-coupon" value="" placeholder="Insert Coupon">
+          <input id="coupon" class="input" type="text" name="discount-coupon" value="" placeholder="Insert Coupon">
         </div>
-        <a href="#"><button class="btn" type="button" name="button">Calculate</button></a>
+        <div class="bottone">
+          <a href="#"><button id="buttonCalculate" type="button" name="button">Calculate</button></a>
+        </div>
       </div>
 
     </main>
