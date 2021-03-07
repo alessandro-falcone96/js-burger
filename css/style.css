@@ -32,6 +32,7 @@ header{
 header h1{
   align-self: center;
   margin-left: 30px;
+  font-weight: 900;
 }
 header img{
   height: 175px;
@@ -88,7 +89,6 @@ main .contenitore .contenitore-ingredienti .ingrediente ul li input{
   cursor: pointer;
   height: 0;
   width: 0;
-  border: 1px solid green;
 }
 main .contenitore .contenitore-ingredienti .ingrediente ul li .contenitore-check .checkmark{
   position: absolute;
@@ -148,8 +148,6 @@ main .contenitore .bottone a button{
 }
 
 
-
-
 footer{
   background-color: #D33359;
   color: white;
@@ -164,4 +162,113 @@ footer h3{
 }
 footer h2{
   margin-right: 30px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+  /* Header */
+  header{
+    width: 100%;
+  }
+  header h1{
+    font-size: 100px;
+    margin-left: 50px;
+  }
+  header img{
+    height: 200px;
+    transform: translate(0%, 70%);
+  }
+
+  /* Main */
+  main{
+    width: 100%;
+    min-height: 77vh;
+    height: 100%;
+  }
+  main .contenitore{
+    margin-left: 50px;
+  }
+  main .contenitore .name{
+    padding-top: 200px;
+  }
+  main .contenitore .name h2{
+    margin-top: 0;
+    font-size: 75px;
+  }
+  main .contenitore .name input{
+    margin-left: 30px;
+    font-size: 50px;
+    width: 50%;
+  }
+  main .contenitore h3{
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  main .contenitore .contenitore-ingredienti{
+    margin: 50px 0px;
+  }
+  main .contenitore .contenitore-ingredienti .ingrediente{
+    width: 100%;
+    margin: 30px 0px;
+  }
+  main .contenitore .contenitore-ingredienti .ingrediente ul{
+    display: flex;
+    align-items: center;
+  }
+  main .contenitore .contenitore-ingredienti .ingrediente ul li img{
+    height: 150px;
+  }
+  main .contenitore .contenitore-ingredienti .ingrediente ul li h4{
+    font-size: 50px;
+  }
+
+  /* STYLING CHECKMARK */
+  main .contenitore .contenitore-ingredienti .ingrediente ul li .contenitore-check .checkmark{
+    height: 40px;
+    width: 40px;
+  }
+  main .contenitore .contenitore-ingredienti .ingrediente ul li label{
+    padding-left: 0px;
+  }
+  .contenitore .contenitore-ingredienti .ingrediente ul li input:checked ~ .checkmark {
+    background-color: blue;
+  }
+  .contenitore-check input:checked ~ .checkmark:after {
+    display: none;
+  }
+  /* FINE STYLING CHECKMARK */
+  main .contenitore .discount h4{
+    font-size: 50px;
+  }
+  main .contenitore .discount input{
+    width: 50%;
+    margin-left: 30px;
+    font-size: 50px;
+  }
+  main .contenitore .bottone{
+    margin-top: 75px;
+  }
+  main .contenitore .bottone a{
+    font-size: 75px;
+  }
+
+  /* Footer */
+  footer{
+    background-color: #D33359;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer h3{
+    font-size: 100px;
+    margin-left: 50px;
+  }
+  footer h2{
+    font-size: 75px;
+    margin-right: 30px;
+  }
 }
